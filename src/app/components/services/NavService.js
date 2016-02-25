@@ -15,6 +15,11 @@
         sref: '.dashboard'
       },
       {
+        name: 'CRM',
+        icon: 'people',
+        sref: '.crm'
+      }
+      /*{
         name: 'Profile',
         icon: 'person',
         sref: '.profile'
@@ -23,12 +28,7 @@
         name: 'Table',
         icon: 'view_module',
         sref: '.table'
-      },
-      {
-        name: 'CRM',
-        icon: 'people',
-        sref: '.crm'
-      }
+      }*/
     ];
 
     return {

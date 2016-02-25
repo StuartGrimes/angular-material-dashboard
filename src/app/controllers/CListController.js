@@ -2,14 +2,25 @@
 
   angular
     .module('app')
-    .controller('customerListController','CustomerDetailService', function($scope, $location) {
+    .controller('customerListController', function($scope, $location, RemoteDataService) {
+
       $scope.redirectTo = function(sTargetPage) {
         console.log(sTargetPage);
         $location.path(sTargetPage);
       }
-$scope.myData = 0;
+
+      //var myData = RemoteDataService.myData;
+
+      // Manage data function
+
+      RemoteDataService.getData()
+        .then(RemoteDataService.showData)
+        .then(function(oParsedData){
+          $scope.myData = oParsedData;
+          console.log($scope.myData);
+          $scope.$apply();
+        })
 
     });
-
 
 })();
