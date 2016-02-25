@@ -1,0 +1,22 @@
+<div flex="30" layout="column" class="boxWithHeight" layout-padding>
+  flex="30"
+  <section flex="40">flex="40"</section>
+  <section flex>flex</section>
+</div>
+<div flex layout="column" class="boxWithHeight" layout-padding>
+  flex
+  <section flex="70">flex="70"</section>
+  <section flex="20">flex="20"</section>
+  <section flex >flex </section>
+</div>
+
+<form name="autocompleteForm">
+  <md-autocomplete required md-input-name="autocomplete" md-selected-item="selectedItem" md-search-text="searchText" md-items="item in getMatches(searchText)" md-item-text="item.display">
+    <md-item-template>
+      <span md-highlight-text="searchText">{{item.display}}</span>
+    </md-item-template>
+    <div ng-messages="autocompleteForm.autocomplete.$error">
+      <div ng-message="required">This field is required</div>
+    </div>
+  </md-autocomplete>
+</form>
