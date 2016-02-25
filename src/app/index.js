@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
-  'ngSanitize', 'ui.router', 'ngMaterial', 'nvd3', 'app'])
+  'ngSanitize', 'ui.router', 'ngMaterial', 'nvd3', 'app' ])
 
   .config(function ($stateProvider, $urlRouterProvider, $mdThemingProvider,
                     $mdIconProvider) {
@@ -36,6 +36,24 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
         templateUrl: 'app/views/table.html',
         data: {
           title: 'Table'
+        }
+      })
+      .state('home.crm', {
+        url: '/crm',
+        controller: 'customerListController as list',
+        controllerAs: 'vm',
+        templateUrl: 'app/views/Clist.html',
+        data: {
+          title: 'CRM'
+        }
+      })
+      .state('home.crmdetail', {
+        url: '/crmdetail/:id',
+        controller: 'crmDetailController as detail',
+        controllerAs: 'vm',
+        templateUrl: 'app/views/crmdetail.html',
+        data: {
+          title: 'details'
         }
       });
 

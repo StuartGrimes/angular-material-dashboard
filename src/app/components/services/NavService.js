@@ -23,6 +23,11 @@
         name: 'Table',
         icon: 'view_module',
         sref: '.table'
+      },
+      {
+        name: 'CRM',
+        icon: 'people',
+        sref: '.crm'
       }
     ];
 

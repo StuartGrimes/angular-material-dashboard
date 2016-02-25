@@ -1,0 +1,38 @@
+{
+  "salesorders": [{
+    "id": "SO1",
+    "date": "01/02/2016",
+    "contact": "Blaine Rogers",
+    "orderLines": [{
+      "productId": "12456",
+      "productDesc": "Floating Soap",
+      "qty": 6,
+      "costPrice": 2.75,
+      "sellPrice": 4.75,
+      "allocated": 1,
+      "stockLocation": "W1",
+      "taxRate": "23%",
+      "lineSub": "28.5"
+    }, {
+      "productId": "122",
+      "productDesc": "Candle Pack - white",
+      "qty": 2,
+      "costPrice": 1.50,
+      "sellPrice": 4.00,
+      "allocated": 1,
+      "stockLocation": "W4-A2-R3-S2",
+      "taxRate": "23%",
+      "lineSub": "8.00"
+    }, {
+      "productId": "212",
+      "productDesc": "Post It's - pack of 4",
+      "qty": 1,
+      "costPrice": .50,
+      "sellPrice": 2.00,
+      "allocated": 1,
+      "stockLocation": "W4-A5-R1-S6",
+      "taxRate": "23%",
+      "lineSub": "2.00"
+    }]
+  }]
+}
